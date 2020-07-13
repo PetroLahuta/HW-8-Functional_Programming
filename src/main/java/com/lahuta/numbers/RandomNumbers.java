@@ -7,11 +7,11 @@ import java.util.stream.Collectors;
 
 public class RandomNumbers {
 
-    public static void createRandomNambers() {
+    public static void createRandomNumbers() {
         List<Integer> randomList = new Random().ints(15, 1,
                 101).boxed().collect(Collectors.toList());
         System.out.println("Task 2");
-        System.out.println("Random nambers: " + randomList + "\n---------------------------------");
+        System.out.println("Random numbers: " + randomList + "\n---------------------------------");
 
         Integer minOfRandom = randomList.stream().min(Integer::compareTo).
                 orElseThrow(NoSuchElementException::new);
@@ -28,6 +28,6 @@ public class RandomNumbers {
 
         List<Integer> plusTenList = randomList.stream().map(n -> n + 10).collect(Collectors.toList());
         System.out.println("2.4. Increase the value by 10: " + plusTenList +
-                "\nRandom nambers: " + randomList + "\n---------------------------------");
+                "\nRandom numbers: " + randomList + "\n---------------------------------");
     }
 }
