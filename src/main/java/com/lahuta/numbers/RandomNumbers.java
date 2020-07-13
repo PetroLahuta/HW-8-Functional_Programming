@@ -1,11 +1,11 @@
-package main.java.com.lahuta.nambers;
+package main.java.com.lahuta.numbers;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-public class RandomNambers {
+public class RandomNumbers {
 
     public static void createRandomNambers() {
         List<Integer> randomList = new Random().ints(15, 1,
